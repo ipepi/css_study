@@ -127,7 +127,8 @@ body{
 .work-image{
     display: block;
     width: 100%;
-    margin: 0 0 40%
+    /* margin: 0 0 40% */
+    margin-bottom: 66%;
 }
 
 .work-box::after{
@@ -149,4 +150,56 @@ body{
     left: 0;
     width: 100%;
     height: 50%;
+    z-index: 1;
+}
+
+.work-description-inner{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.work-text{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.work-text .button{
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+}
+
+.button-ghost{
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.window::after{
+    background-image: url('https://www.pakutaso.com/shared/img/thumb/TSURU1891090_TP_V.jpg');
+}
+
+.iwa::after{
+    background-image: url('https://www.pakutaso.com/shared/img/thumb/tokunoshimaIMGL4743_TP_V.jpg');
+}
+
+.mugi::after{
+    background-image: url('https://www.pakutaso.com/shared/img/thumb/TSURU1891102_TP_V.jpg');
+}
+
+.work-box:nth-child(odd) .work-image{
+    margin: 66% 0 0;
+}
+
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after{
+    top: 0;
+}
+
+.footer{
+    font-size: 1.5rem;
+    padding: 15px;
 }
